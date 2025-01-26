@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick and Easy Recipes - Digital Recipe Book</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #fffaf0, #ffe4c4);
+            color: #333;
+        }
+        header {
+            background-color: #ff6f61;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffd7c2;
+        }
+        .recipe-section {
+            padding: 50px 20px;
+            background-color: #fff5e1;
+        }
+        .recipe-title {
+            font-size: 32px;
+            color: #ff6f61;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .recipe-card {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease-in-out;
+            width: 250px;
+            margin-bottom: 20px;
+        }
+        .recipe-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .recipe-card .card-body {
+            padding: 15px;
+        }
+        .recipe-card .card-title {
+            font-size: 22px;
+            color: #ff6f61;
+        }
+        .recipe-card .card-text {
+            font-size: 16px;
+            color: #333;
+        }
+        .recipe-card:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DIGITAL RECIPE BOOK</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="recipe.html">Recipes</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- Quick and Easy Recipes Section -->
+    <section class="recipe-section">
+        <h2 class="recipe-title">- Quick and Easy Recipes -</h2>
+
+        <div class="d-flex flex-wrap justify-content-center">
+            <!-- Recipe 1: Avocado Toast -->
+            <div class="recipe-card">
+                <img src="https://th.bing.com/th/id/R.3974c5483577d19f87d4ba0368c4e74d?rik=BcHcABTk2SFiLg&pid=ImgRaw&r=0" alt="Avocado Toast">
+                <div class="card-body">
+                    <h5 class="card-title">Avocado Toast</h5>
+                    <p class="card-text">Simple and healthy with mashed avocado on toasted bread.</p>
+                    <a href="avocado-toast.html" class="btn btn-danger">View Recipe</a>
+                </div>
+            </div>
+
+            <!-- Recipe 2: Smoothie Bowl -->
+            <div class="recipe-card">
+                <img src="https://th.bing.com/th/id/R.a00ae84a2581b408c9b1abf6b0bc6436?rik=RBIf0bOFmTaZjg&pid=ImgRaw&r=0" alt="Smoothie Bowl">
+                <div class="card-body">
+                    <h5 class="card-title">Smoothie Bowl</h5>
+                    <p class="card-text">A nutritious and quick breakfast bowl full of fruit and granola.</p>
+                    <a href="smoothie-bowl.html" class="btn btn-danger">View Recipe</a>
+                </div>
+            </div>
+
+            <!-- Recipe 3: Peanut Butter Banana Sandwich -->
+            <div class="recipe-card">
+                <img src="https://th.bing.com/th/id/OIP.RPpQ5GhEoVLCKsNtQdLQcAHaHa?rs=1&pid=ImgDetMain" alt="Peanut Butter Banana Sandwich">
+                <div class="card-body">
+                    <h5 class="card-title">Peanut Butter Banana Sandwich</h5>
+                    <p class="card-text">A quick and delicious sandwich for breakfast or snack time.</p>
+                    <a href="peanut-butter-banana-sandwich.html" class="btn btn-danger">View Recipe</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        &copy; 2024 Digital Recipe Book | All Rights Reserved
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

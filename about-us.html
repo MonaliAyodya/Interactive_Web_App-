@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Digital Recipe Book</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #fffaf0, #ffe4c4);
+            color: #333;
+        }
+        header {
+            background-color: #ff6f61;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffd7c2;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px;
+        }
+        .about-section,
+        .mission-vision-section {
+            width: 60%;
+        }
+        .about-title, .mission-vision-title {
+            font-size: 36px;
+            color: #ff6f61;
+            margin-bottom: 20px;
+        }
+        .about-content, .mission-vision-content {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
+            max-width: 800px;
+        }
+        .famous-recipes-section {
+            width: 35%;
+            background-color: #ffe4c4;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .famous-recipes-title {
+            font-size: 32px;
+            color: #ff6f61;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .famous-recipes-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .famous-recipes-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .famous-recipes-list li img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+        .team-section {
+            padding: 50px 20px;
+            background-color: #ffe4c4;
+        }
+        .team-title {
+            font-size: 32px;
+            color: #ff6f61;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .team-members {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .team-card {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+            transition: transform 0.5s ease-in-out;
+        }
+        .team-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .team-card .card-body {
+            padding: 15px;
+        }
+        .team-card .card-title {
+            font-size: 20px;
+            color: #ff6f61;
+        }
+        .team-card .card-text {
+            font-size: 16px;
+            color: #333;
+        }
+        .team-card:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DIGITAL RECIPE BOOK</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="recipe.html">Recipes</a>
+            <a href="about-us.html">About Us</a>
+            <a href="Contactus.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- Main Section with About Us and Famous Recipes -->
+    <div class="container">
+        <!-- Left Section: About Us, Mission, and Vision -->
+        <div>
+            <!-- About Us Section -->
+            <section class="about-section">
+                <h2 class="about-title">- About Us -</h2>
+                <p class="about-content">
+                    Welcome to <strong>Digital Recipe Book</strong>! Our mission is to bring joy and flavor to your kitchen 
+                    by offering a wide variety of delicious recipes for all skill levels. Whether you are a beginner looking 
+                    for quick and easy meals or a seasoned chef exploring new cuisines, our recipe book is here to inspire you.
+                </p>
+            </section>
+
+            <!-- Mission and Vision Section -->
+            <section class="mission-vision-section">
+                <h2 class="mission-vision-title">- Our Mission & Vision -</h2>
+
+                <!-- Our Mission -->
+                <div class="mission-vision-content">
+                    <h3>Our Mission</h3>
+                    <p>
+                        Our mission is to make cooking easy, enjoyable, and accessible for everyone. We aim to provide a 
+                        platform where people can discover new recipes, learn new cooking skills, and create delicious meals 
+                        to share with their families and friends. We believe in using fresh ingredients, simple techniques, 
+                        and a passion for food to create unforgettable experiences in the kitchen.
+                    </p>
+                </div>
+
+                <!-- Our Vision -->
+                <div class="mission-vision-content">
+                    <h3>Our Vision</h3>
+                    <p>
+                        Our vision is to become the go-to source for all things food. We strive to inspire creativity in the 
+                        kitchen, encourage healthy eating, and connect people through the universal love of food. We want to 
+                        build a community where anyone can find the perfect recipe, learn from experts, and feel empowered to 
+                        cook with confidence and joy.
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Right Section: Our Famous Recipes -->
+        <div class="famous-recipes-section">
+            <h2 class="famous-recipes-title">- Our Famous Recipes -</h2>
+            <ul class="famous-recipes-list">
+                <!-- Recipe 1 -->
+                <li>
+                    <img src="https://th.bing.com/th/id/OIF.I5Re6PDVgFag3s6aUpWDUw?rs=1&pid=ImgDetMain" alt="Recipe 1">
+                    <div>
+                        <strong>Spaghetti Carbonara</strong>
+                        <p>A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.</p>
+                    </div>
+                </li>
+                <!-- Recipe 2 -->
+                <li>
+                    <img src="https://th.bing.com/th/id/OIP.AHVcHNpXiWO2ohw-VmBfSwHaFj?rs=1&pid=ImgDetMain" alt="Recipe 2">
+                    <div>
+                        <strong>Chicken Tikka Masala</strong>
+                        <p>A flavorful, creamy, and spicy chicken curry dish from India.</p>
+                    </div>
+                </li>
+                <!-- Recipe 3 -->
+                <li>
+                    <img src="https://th.bing.com/th/id/R.435678164cf0202363aabd2b2c39ceb5?rik=23pQ8GGygetYEg&pid=ImgRaw&r=0" alt="Recipe 3">
+                    <div>
+                        <strong>Chocolate Cake</strong>
+                        <p>A rich and moist chocolate cake topped with a decadent chocolate ganache.</p>
+                    </div>
+                </li>
+                <!-- Recipe 4 -->
+                <li>
+                    <img src="https://th.bing.com/th/id/R.f18d64af5bea4db5d69576457a46e149?rik=VxMAb3Wp%2fK9qdA&pid=ImgRaw&r=0" alt="Recipe 4">
+                    <div>
+                        <strong>Grilled Cheese Sandwich</strong>
+                        <p>A simple yet delicious sandwich with melted cheese between two slices of crispy bread.</p>
+                    </div>
+                </li>
+                <!-- Recipe 5 -->
+                <li>
+                    <img src="https://th.bing.com/th/id/OIP.xNO5PCZ7Y-5wsCnon5ouJwHaE8?rs=1&pid=ImgDetMain" alt="Recipe 5">
+                    <div>
+                        <strong>Caesar Salad</strong>
+                        <p>A fresh salad made with romaine lettuce, croutons, parmesan cheese, and Caesar dressing.</p>
+                    </div>
+                </li>
+                <!-- Recipe 6 -->
+                <li>
+                    <img src="https://th.bing.com/th/id/OIP.V60pc6LFIaBn0hO75jm1egHaHZ?rs=1&pid=ImgDetMain" alt="Recipe 6">
+                    <div>
+                        <strong>Beef Tacos</strong>
+                        <p>Spiced ground beef served in soft or hard taco shells, topped with cheese, salsa, and guacamole.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <h2 class="team-title">- Meet Our Team -</h2>
+        <div class="team-members">
+            <!-- Team Member 1 -->
+            <div class="team-card">
+                <img src="https://th.bing.com/th/id/OIP.v-yowbhUOjXV6XGxF1ZYYAHaF7?pid=ImgDet&w=700&h=560&rs=1" alt="Team Member">
+                <div class="card-body">
+                    <h5 class="card-title">Jane Doe</h5>
+                    <p class="card-text">Founder & Chef</p>
+                    <p>Email: <a href="mailto:jane.doe@email.com">jane.doe@email.com</a></p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <!-- Team Member 2 -->
+            <div class="team-card">
+                <img src="https://th.bing.com/th/id/OIP.c2xtjBaPdzsaEcs3GH6RFAHaHa?pid=ImgDet&rs=1" alt="Team Member">
+                <div class="card-body">
+                    <h5 class="card-title">John Smith</h5>
+                    <p class="card-text">Recipe Curator</p>
+                    <p>Email: <a href="mailto:john.smith@email.com">john.smith@email.com</a></p>
+                    <p>Phone: +1 (555) 987-6543</p>
+                </div>
+            </div>
+            <!-- Team Member 3 -->
+            <div class="team-card">
+                <img src="https://th.bing.com/th/id/OIP.M4c0-QCWqxy-q0hAlh7PbwHaFj?pid=ImgDet&rs=1" alt="Team Member">
+                <div class="card-body">
+                    <h5 class="card-title">Emily Brown</h5>
+                    <p class="card-text">Nutrition Expert</p>
+                    <p>Email: <a href="mailto:emily.brown@email.com">emily.brown@email.com</a></p>
+                    <p>Phone: +1 (555) 654-3210</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 Digital Recipe Book | All Rights Reserved
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
