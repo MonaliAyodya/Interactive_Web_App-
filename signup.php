@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login - Digital Recipe Book</title>
+    <title>Sign Up - Digital Recipe Book</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -10,7 +10,7 @@
             background: linear-gradient(to bottom, #fffaf0, #ffe4c4);
             font-family: Arial, sans-serif;
         }
-        .login-container {
+        .signup-container {
             max-width: 400px;
             margin: 100px auto;
             background: white;
@@ -62,20 +62,24 @@ footer .social-icons a:hover {
     </style>
 </head>
 <body>
-    <div class="login-container">
-        <h2 class="form-title">Login</h2>
-        <form action="login.php" method="post">
+    <div class="signup-container">
+        <h2 class="form-title">Sign Up</h2>
+        <form action="#" method="post">
             <div class="mb-3">
-                <label>Email Address</label>
-                <input type="email" name="email"class="form-control" required>
+                <label>Full Name</label>
+                <input type="text" class="form-control" required>
             </div>
             <div class="mb-3">
-                <label>password</label>
-                <input type="password" name="password" class="form-control" required>
+                <label>Email address</label>
+                <input type="email" class="form-control" required>
             </div>
-            <button type="submit" class="btn btn-custom w-100">Login</button>
+            <div class="mb-3">
+                <label>Password</label>
+                <input type="password" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-custom w-100">Sign Up</button>
         </form>
-        <p class="mt-3 text-center">Don't have an account? <a href="signup.html">Sign up</a></p>
+        <p class="mt-3 text-center">Already have an account? <a href="login.html">Login</a></p>
     </div>
     <footer>
         &copy; 2024 Digital Recipe Book | All Rights Reserved

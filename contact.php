@@ -1,26 +1,26 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+?>
+<?php
+include 'includesdb.php';
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    $message = htmlspecialchars($_POST['message']);
+    $name = htmlspecialchars($_POST["name"]);
+    $email = htmlspecialchars($_POST["email"]);
+    $message = htmlspecialchars($_POST["message"]);
 
-    // Validate inputs
-    if (!empty($name) && !empty($email) && !empty($message)) {
-        // Send an email (this requires a properly configured mail server)
-        $to = "your-email@example.com"; // Replace with your email
-        $subject = "New Contact Form Submission";
-        $body = "Name: $name\nEmail: $email\nMessage:\n$message";
-        $headers = "From: $email";
+    $stmt = $conn->prepare("INSERT INTO messages (name, email, message) VALUES (?, ?, ?)");
+    $stmt->bind_param("sss", $name, $email, $message);
 
-        if (mail($to, $subject, $body, $headers)) {
-            echo "Message sent successfully!";
-        } else {
-            echo "Failed to send the message. Please try again later.";
-        }
+    if ($stmt->execute()) {
+        echo "<script>alert('Message sent successfully!'); window.location.href='contactus.html';</script>";
     } else {
-        echo "Please fill in all the fields.";
+        echo "<script>alert('Error sending message.'); window.location.href='contactus.html';</script>";
     }
-} else {
-    echo "Invalid request method.";
+
+    $stmt->close();
+    $conn->close();
 }
 ?>

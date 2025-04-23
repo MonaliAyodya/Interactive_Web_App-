@@ -218,7 +218,7 @@ footer .social-icons a:hover {
         <div class="recipe-description">
           <p>Spaghetti Carbonara is a classic Italian dish that's both rich and comforting, featuring creamy eggs, savory cheese, crispy pancetta, and a touch of black pepper. This dish is ideal for a quick weeknight dinner or a special occasion.</p>
           <p>Whether you're preparing it for a cozy family dinner or a dinner party with friends, Spaghetti Carbonara is sure to impress with its simplicity and deliciously rich flavors.</p>
-          <a href="spaghetti-carbonara.html" class="view-recipe-btn">View Recipe</a>
+          <a href="full-recipe.html" class="view-recipe-btn">View Recipe</a>
         </div>
         <div class="reviews-section">
           <div class="review-item">
